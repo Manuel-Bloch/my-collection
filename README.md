@@ -6,7 +6,7 @@ TTT ist eine Webanwendung, mit der ich meine Tischtennisspiele dokumentieren und
 
 Die Website richtet sich an Tischtennisspieler, die ihre Matches persönlich dokumentieren und ihre Leistungen besser nachvollziehen möchten. Der Fokus liegt zunächst auf meiner eigenen Spielesammlung.
 
-**Repository:** 
+**Repository:** https://github.com/Manuel-Bloch/my-collection
 
 ## Kategorien
 
