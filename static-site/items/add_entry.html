@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Tennis Tracker</title>
+</head>
+<body>
+    <header>
+        <p>TTT</p>
+    </header>
+
+    <nav>
+        <a href="../index.html">Startseite</a>
+        <br>
+        <a href="./add_entry.html">Spiel hinzufügen</a>
+        <br>
+        <a href="./game_entry.html">Spiel anzeigen</a>
+        <br>
+        <a href="./kontaktformular.html">Kontaktformular</a>
+    </nav>
+
+    <main>
+        <h1>Neuer Eintrag</h1>
+
+        <section>
+            <form action="#" method="post">
+                <label for="opponent_name">Name des Gegners:</label>
+                <input type="text" id="opponent_name" name="opponent_name" required>
+                <br>
+                <label for="date">Datum:</label>
+                <input type="date" id="date" name="date" required>
+                <br>
+                <label for="setscore">Satzergebnisse:</label>
+                <input type="number" id="setscore" name="setscore" required>
+                <br>
+                <label for="score">Ergebnis:</label>
+                <input type="number" id="score" name="score" required>
+                <br>
+                <label for="note_positive">Was hat gut funktioniert:</label>
+                <input type="text" id="note_positive" name="note_positive" required>
+                <br>
+                <label for="note_negative">Was hat nicht gut funktioniert:</label>
+                <input type="text" id="note_negative" name="note_negative" required>
+                <br>
+                <button type="submit">Eintrag hinzufügen</button>
+            </form>
+        </section>
+
+    </main>
+</body>
+</html>
