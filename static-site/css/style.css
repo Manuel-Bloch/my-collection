@@ -178,16 +178,81 @@ button[type="submit"]:hover {
     cursor: pointer;
 }
 
-table,
-th,
-td {
+/* Statistik: Panels, Kennzahlen und Tabelle */
+.panel {
+    margin-bottom: var(--space);
+    padding: var(--space);
+    background-color: var(--color-card);
     border: 1px solid var(--color-border);
+    border-radius: 8px;
+}
+
+.panel h2 {
+    margin-top: 0;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space);
+    margin: 0;
+}
+
+.stat {
+    padding: var(--space);
+    background-color: var(--color-surface-raised);
+    border-radius: 8px;
+}
+
+.stat dt {
+    color: var(--color-text-muted);
+    font-size: 0.9em;
+}
+
+.stat dd {
+    margin: 0.2em 0 0;
+    color: var(--color-text);
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.stat dd.win {
+    color: var(--color-success);
+}
+
+.stat dd.loss {
+    color: var(--color-danger);
+}
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+.stats-table {
+    width: 100%;
     border-collapse: collapse;
 }
 
-th,
-td {
-    padding: 0.4em 0.8em;
+.stats-table th,
+.stats-table td {
+    padding: 0.6em 0.8em;
+    text-align: right;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.stats-table th:first-child {
+    text-align: left;
+}
+
+.stats-table thead th {
+    color: var(--color-text-muted);
+    font-size: 0.9em;
+}
+
+.stats-table tfoot th,
+.stats-table tfoot td {
+    color: var(--color-accent);
+    border-bottom: none;
 }
 
 hr {
@@ -202,6 +267,10 @@ hr {
 
     .gridbox {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stats {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
