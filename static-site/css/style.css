@@ -12,6 +12,7 @@
     --color-danger: #f87171;
     --color-warning: #fbbf24;
     --font-main: Inter, sans-serif;
+    --font-number: Barlow Condensed, sans-serif;
     --space: 1em;
 }
 
@@ -116,34 +117,8 @@ dd {
     border-radius: 8px;
 }
 
-.card {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: var(--space);
-}
-
 .card h2 {
     margin-top: 0;
-}
-
-.card-result {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    text-align: right;
-}
-
-.card-result strong {
-    font-size: 1.8em;
-}
-
-.card-result.win {
-    color: var(--color-success);
-}
-
-.card-result.loss {
-    color: var(--color-danger);
 }
 
 input,
@@ -167,6 +142,40 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background-color: var(--color-accent-hover);
+}
+
+.form-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
+    max-width: 600px;
+    padding: var(--space);
+    background-color: var(--color-card);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+}
+
+.form-card label {
+    margin-top: 0.6em;
+    color: var(--color-text-muted);
+    font-size: 0.9em;
+}
+
+.form-card input,
+.form-card textarea {
+    width: 100%;
+}
+
+.form-card input:focus,
+.form-card textarea:focus {
+    outline: 2px solid var(--color-accent);
+    border-color: var(--color-accent);
+}
+
+.form-card button {
+    margin-top: var(--space);
+    padding: 0.7em;
+    cursor: pointer;
 }
 
 table,
