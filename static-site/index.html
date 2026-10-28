@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
+    <link rel="stylesheet" href="./css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table Tennis Tracker</title>
@@ -8,19 +9,20 @@
 <body>
     <header>
         <p>TTT</p>
-    </header>
+    
 
     <nav>
         <a href="./index.html">Startseite</a>
-        <br>
+        
         <a href="./items/add_entry.html">Spiel hinzufügen</a>
-        <br>
+        
         <a href="./items/game_entry.html">Spiel anzeigen</a>
-        <br>
-        <a href="./items/kontaktformular.html">Kontaktformular</a>
-        <br>
+
         <a href="./items/statistics.html">Statistik</a>
+        
+        <a href="./items/kontaktformular.html">Kontaktformular</a>
     </nav>
+    </header>
 
     <main>
         <h1>Letzte Einträge</h1>
@@ -28,44 +30,80 @@
         <label for="filter">Filter</label>
         <input id="filter" type="search">
 
-        <a href="./items/add_entry.html">Spiel hinzufügen</a>
+        <a class ="button" href="./items/add_entry.html">+ Spiel hinzufügen</a>
 
-        <section aria-label="Letzte Spiele">
-            <article>
-                <h2>Max Mustermann</h2>
-                <time datetime="2026-05-26">26.05.2026</time>
-                <p>Turnier</p>
-                <a href="./items/game_entry.html">Details anzeigen</a>
+        <section class="gridbox" aria-label="Letzte Spiele">
+            <article class="card">
+                <div class="card-info">
+                    <h2>Max Mustermann</h2>
+                    <time datetime="2026-05-26">26.05.2026</time>
+                    <p>Turnier</p>
+                    <a href="./items/game_entry.html">Details anzeigen</a>
+                </div>
+                <div class="card-result win">
+                    <strong>3:1</strong>
+                    <span>Sieg</span>
+                </div>
             </article>
-            <article>
-                <h2>Max Mustermann</h2>
-                <time datetime="2026-05-26">26.05.2026</time>
-                <p>Turnier</p>
-                <a href="./items/game_entry.html">Details anzeigen</a>
+            <article class="card">
+                <div class="card-info">
+                    <h2>Lena Schmidt</h2>
+                    <time datetime="2026-05-19">19.05.2026</time>
+                    <p>Training</p>
+                    <a href="./items/game_entry.html">Details anzeigen</a>
+                </div>
+                <div class="card-result loss">
+                    <strong>1:3</strong>
+                    <span>Niederlage</span>
+                </div>
             </article>
-            <article>
-                <h2>Max Mustermann</h2>
-                <time datetime="2026-05-26">26.05.2026</time>
-                <p>Turnier</p>
-                <a href="./items/game_entry.html">Details anzeigen</a>
+            <article class="card">
+                <div class="card-info">
+                    <h2>Tom Becker</h2>
+                    <time datetime="2026-05-12">12.05.2026</time>
+                    <p>Liga</p>
+                    <a href="./items/game_entry.html">Details anzeigen</a>
+                </div>
+                <div class="card-result win">
+                    <strong>3:0</strong>
+                    <span>Sieg</span>
+                </div>
             </article>
-            <article>
-                <h2>Max Mustermann</h2>
-                <time datetime="2026-05-26">26.05.2026</time>
-                <p>Turnier</p>
-                <a href="./items/game_entry.html">Details anzeigen</a>
+            <article class="card">
+                <div class="card-info">
+                    <h2>Jonas Weber</h2>
+                    <time datetime="2026-05-05">05.05.2026</time>
+                    <p>Turnier</p>
+                    <a href="./items/game_entry.html">Details anzeigen</a>
+                </div>
+                <div class="card-result loss">
+                    <strong>2:3</strong>
+                    <span>Niederlage</span>
+                </div>
             </article>
-            <article>
-                <h2>Max Mustermann</h2>
-                <time datetime="2026-05-26">26.05.2026</time>
-                <p>Turnier</p>
-                <a href="./items/game_entry.html">Details anzeigen</a>
+            <article class="card">
+                <div class="card-info">
+                    <h2>Anna Keller</h2>
+                    <time datetime="2026-04-28">28.04.2026</time>
+                    <p>Training</p>
+                    <a href="./items/game_entry.html">Details anzeigen</a>
+                </div>
+                <div class="card-result win">
+                    <strong>3:2</strong>
+                    <span>Sieg</span>
+                </div>
             </article>
-            <article>
-                <h2>Max Mustermann</h2>
-                <time datetime="2026-05-26">26.05.2026</time>
-                <p>Turnier</p>
-                <a href="./items/game_entry.html">Details anzeigen</a>
+            <article class="card">
+                <div class="card-info">
+                    <h2>Paul Fischer</h2>
+                    <time datetime="2026-04-21">21.04.2026</time>
+                    <p>Liga</p>
+                    <a href="./items/game_entry.html">Details anzeigen</a>
+                </div>
+                <div class="card-result win">
+                    <strong>3:1</strong>
+                    <span>Sieg</span>
+                </div>
             </article>
         </section>
     </main>

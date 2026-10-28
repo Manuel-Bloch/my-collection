@@ -1,0 +1,29 @@
+FARBPALETTE
+
+Hintergrund:           #17191C
+Cards / Flächen:       #282B30
+Erhöhte Flächen:       #34383F
+Rahmen / Trennlinien:  #41454C
+
+Primärtext:            #FFFFFF
+Sekundärtext:          #A3A8B0
+
+Akzentfarbe (Grün):    #B9F36B
+Hover / Highlight:     #CFFF91
+Dezente Grünfläche:    #353F2B
+
+Erfolg / Siege:        #B9F36B
+Niederlagen:           #F87171
+Warnungen:             #FBBF24
+
+
+VERWENDUNG
+
+Hintergrund:           #17191C
+Karten und Panels:     #282B30
+Buttons:               #B9F36B
+Aktive Navigation:     #B9F36B
+Überschriften:         #FFFFFF
+Beschreibungen:        #A3A8B0
+Positive TTR-Entwicklung: #B9F36B
+Niederlagen:           #F87171
