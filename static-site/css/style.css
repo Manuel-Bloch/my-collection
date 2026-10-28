@@ -111,6 +111,10 @@ dd {
 }
 
 .card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space);
     background-color: var(--color-card);
     border: 1px solid var(--color-border);
     padding: var(--space);
@@ -119,6 +123,25 @@ dd {
 
 .card h2 {
     margin-top: 0;
+}
+
+.card-result {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.card-result strong {
+    font-size: 1.8em;
+}
+
+.card-result.win {
+    color: var(--color-success);
+}
+
+.card-result.loss {
+    color: var(--color-danger);
 }
 
 input,
@@ -255,6 +278,65 @@ button[type="submit"]:hover {
     border-bottom: none;
 }
 
+menu {
+    display: flex;
+    gap: 0.5em;
+    margin: 0 0 var(--space);
+    padding: 0;
+}
+
+menu button {
+    cursor: pointer;
+}
+
+menu button:last-child {
+    color: var(--color-danger);
+    border-color: var(--color-danger);
+}
+
+.versus {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: var(--space);
+}
+
+.versus strong {
+    font-size: 2.2em;
+    color: var(--color-accent);
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+figure img {
+    width: 100px;
+    clip-path: circle(40%);
+}
+
+figcaption {
+    color: var(--color-text-muted);
+}
+
+.panel ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.panel li {
+    padding: 0.4em 0.8em;
+    background-color: var(--color-surface-raised);
+    border-radius: 6px;
+}
+
 hr {
     border-color: var(--color-border);
 }
@@ -271,6 +353,10 @@ hr {
 
     .stats {
         grid-template-columns: repeat(4, 1fr);
+    }
+
+    figure img {
+        width: 160px;
     }
 }
 
