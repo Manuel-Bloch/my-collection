@@ -43,5 +43,5 @@ Alle Seiten sind von jeder Seite aus über die Navigationsleiste erreichbar. Das
 - Sollte Nav in den Header? (Chat Gpt)
 - Usecase Flexbox und gridbox. (Chat Gpt)
 - Wie funktioniert CSS :root? (Chat Gpt)
-- wann sollte ich <dl> nutzen? (Chat Gpt)
+- wann sollte ich den dl tag nutzen? (Chat Gpt)
 - Warum wird das Ergebnis auf den Eintragskarten nicht mehr angezeigt? (Copilot)
