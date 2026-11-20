@@ -2,18 +2,17 @@
 <html lang="de">
 <head>
     <link rel="stylesheet" href="../css/style.css">
-    <script src="./js/app.js" defer></script>
+    <script src="../js/app.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table Tennis Tracker</title>
 </head>
 
-<body>
-    <header>
-        <p>TTT</p>
-    
+<body class="app-shell">
+    <header class="site-header">
+        <a class="brand" href="../index.html" aria-label="TTT Startseite">TTT</a>
 
-    <nav>
+    <nav aria-label="Hauptnavigation">
         <a href="../index.html">Startseite</a>
         
         <a href="./add_entry.html">Spiel hinzufügen</a>
@@ -22,23 +21,34 @@
 
         <a href="./statistics.html">Statistik</a>
         
-        <a href="./kontaktformular.html">Kontaktformular</a>
+        <a href="./kontaktformular.html" aria-current="page">Kontaktformular</a>
     </nav>
     </header>
 
-    <main>
-        <h1>Kontaktformular</h1>
-        <section>
+    <main class="content-main contact-page">
+        <section class="page-heading">
+            <div>
+                <p class="eyebrow">Nachricht senden</p>
+                <h1>Kontaktformular</h1>
+            </div>
+        </section>
+        <section class="form-layout" aria-label="Kontaktdaten und Nachricht">
             <form class="form-card" action="#" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">E-Mail:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Nachricht:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-                <button type="submit">Absenden</button>
+                <div class="form-grid contact-grid">
+                    <div class="field">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="field">
+                        <label for="email">E-Mail</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="field field-full">
+                        <label for="message">Nachricht</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="primary-button">Absenden</button>
             </form>
         </section>
 

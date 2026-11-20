@@ -2,19 +2,18 @@
 <html lang="de">
 <head>
     <link rel="stylesheet" href="../css/style.css">
-    <script src="./js/app.js" defer></script>
+    <script src="../js/app.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table Tennis Tracker</title>
 </head>
-<body>
-    <header>
-        <p>TTT</p>
-    
-    <nav>
+<body class="app-shell">
+    <header class="site-header">
+        <a class="brand" href="../index.html" aria-label="TTT Startseite">TTT</a>
+
+    <nav aria-label="Hauptnavigation">
         <a href="../index.html">Startseite</a>
-        
-        <a href="./add_entry.html">Spiel hinzufügen</a>
+        <a href="./add_entry.html" aria-current="page">Spiel hinzufügen</a>
         
         <a href="./game_entry.html">Spiel anzeigen</a>
 
@@ -25,24 +24,44 @@
     </nav>
     </header>
 
-    <main>
-        <h1>Neuer Eintrag</h1>
+    <main class="content-main">
+        <section class="page-heading">
+            <div>
+                <p class="eyebrow">Neuer Matchbericht</p>
+                <h1>Spiel hinzufügen</h1>
+            </div>
+            <a class="back-link" href="../index.html">Zurück zur Übersicht</a>
+        </section>
 
-        <section>
+        <section class="form-layout" aria-label="Neuen Spieleintrag erfassen">
             <form class="form-card" action="#" method="post">
-                <label for="opponent_name">Name des Gegners:</label>
-                <input type="text" id="opponent_name" name="opponent_name" required>
-                <label for="date">Datum:</label>
-                <input type="date" id="date" name="date" required>
-                <label for="setscore">Satzergebnisse:</label>
-                <input type="number" id="setscore" name="setscore" required>
-                <label for="score">Ergebnis:</label>
-                <input type="number" id="score" name="score" required>
-                <label for="note_positive">Was hat gut funktioniert:</label>
-                <textarea id="note_positive" name="note_positive" rows="3"></textarea>
-                <label for="note_negative">Was hat nicht gut funktioniert:</label>
-                <textarea id="note_negative" name="note_negative" rows="3"></textarea>
-                <button type="submit">Eintrag hinzufügen</button>
+                <div class="form-grid">
+                    <div class="field">
+                        <label for="opponent_name">Name des Gegners</label>
+                        <input type="text" id="opponent_name" name="opponent_name" required>
+                    </div>
+                    <div class="field">
+                        <label for="date">Datum</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="field">
+                        <label for="setscore">Satzergebnisse</label>
+                        <input type="text" id="setscore" name="setscore" placeholder="11:8, 9:11, 11:7" required>
+                    </div>
+                    <div class="field">
+                        <label for="score">Gesamtergebnis</label>
+                        <input type="text" id="score" name="score" placeholder="3:1" required>
+                    </div>
+                    <div class="field field-full">
+                        <label for="note_positive">Was hat gut funktioniert?</label>
+                        <textarea id="note_positive" name="note_positive" rows="4"></textarea>
+                    </div>
+                    <div class="field field-full">
+                        <label for="note_negative">Was hat nicht gut funktioniert?</label>
+                        <textarea id="note_negative" name="note_negative" rows="4"></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="primary-button">Eintrag hinzufügen</button>
             </form>
         </section>
 

@@ -2,32 +2,36 @@
 <html lang="de">
 <head>
     <link rel="stylesheet" href="../css/style.css">
-    <script src="./js/app.js" defer></script>
+    <script src="../js/app.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table Tennis Tracker</title>
 </head>
-<body>
-    <header>
-        <p>TTT</p>
-    
+<body class="app-shell">
+    <header class="site-header">
+        <a class="brand" href="../index.html" aria-label="TTT Startseite">TTT</a>
 
-    <nav>
+    <nav aria-label="Hauptnavigation">
         <a href="../index.html">Startseite</a>
         
         <a href="./add_entry.html">Spiel hinzufügen</a>
         
         <a href="./game_entry.html">Spiel anzeigen</a>
 
-        <a href="./statistics.html">Statistik</a>
+        <a href="./statistics.html" aria-current="page">Statistik</a>
         
         <a href="./kontaktformular.html">Kontaktformular</a>
                
     </nav>
     </header>
     
-    <main>
-        <h1>Statistik</h1>
+    <main class="content-main statistics-page">
+        <section class="page-heading">
+            <div>
+                <p class="eyebrow">Leistungsübersicht</p>
+                <h1>Statistik</h1>
+            </div>
+        </section>
 
         <section class="panel">
             <h2>Gesamtübersicht</h2>

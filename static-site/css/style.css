@@ -721,3 +721,341 @@ hr {
         transition: none;
     }
 }
+
+.app-shell {
+    background:
+        linear-gradient(180deg, var(--color-card) 0, var(--color-card) 88px, var(--color-bg) 88px, var(--color-bg) 100%);
+}
+
+.app-shell .site-header {
+    min-height: 88px;
+    padding: 1.25em clamp(1.25em, 5vw, 4em);
+    background: transparent;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.app-shell .brand {
+    color: var(--color-accent);
+    font-size: 1.35em;
+    letter-spacing: 0.12em;
+}
+
+.app-shell nav {
+    align-items: center;
+}
+
+.app-shell nav a {
+    padding: 0.55em 0.7em;
+    border-radius: 6px;
+    color: var(--color-text-muted);
+    font-size: 0.92em;
+}
+
+.app-shell nav a:hover,
+.app-shell nav a[aria-current="page"] {
+    color: var(--color-text);
+    background: var(--color-surface-raised);
+}
+
+.content-main {
+    width: min(1120px, calc(100% - 2.5em));
+    margin: 0 auto;
+    padding: clamp(2em, 5vw, 4em) 0;
+}
+
+.page-heading {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 2em;
+    margin-bottom: 2em;
+}
+
+.page-heading h1 {
+    margin: 0.15em 0 0;
+    font-size: clamp(2.25rem, 5vw, 4rem);
+    line-height: 1;
+    letter-spacing: -0.035em;
+}
+
+.back-link {
+    flex: 0 0 auto;
+    color: var(--color-text-muted);
+    font-size: 0.88em;
+}
+
+.back-link::before {
+    content: "< ";
+    color: var(--color-accent);
+}
+
+.back-link:hover {
+    color: var(--color-text);
+}
+
+.form-layout {
+    max-width: 760px;
+}
+
+.contact-page .form-layout {
+    max-width: 720px;
+}
+
+.form-card {
+    width: 100%;
+    max-width: none;
+    gap: 1.25em;
+    padding: clamp(1.25em, 3vw, 2em);
+    border-radius: 10px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25em;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    gap: 0.55em;
+}
+
+.field-full {
+    grid-column: 1 / -1;
+}
+
+.form-card label {
+    margin: 0;
+    color: var(--color-text);
+    font-size: 0.88em;
+    font-weight: bold;
+}
+
+.form-card input,
+.form-card textarea {
+    width: 100%;
+    min-height: 46px;
+    padding: 0.75em 0.85em;
+    background: var(--color-surface-raised);
+    border-radius: 7px;
+    font-size: 0.95em;
+}
+
+.form-card textarea {
+    resize: vertical;
+}
+
+.form-card input::placeholder,
+.form-card textarea::placeholder {
+    color: var(--color-text-muted);
+}
+
+.form-card input:focus-visible,
+.form-card textarea:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 1px;
+    border-color: var(--color-accent);
+}
+
+.primary-button {
+    width: fit-content;
+    min-height: 46px;
+    margin-top: 0;
+    padding: 0.75em 1.15em;
+    background: var(--color-accent);
+    color: var(--color-bg);
+    border: 1px solid var(--color-accent);
+    border-radius: 7px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 160ms ease, transform 160ms ease;
+}
+
+.primary-button:hover {
+    background: var(--color-accent-hover);
+    transform: translateY(-1px);
+}
+
+.statistics-page .panel,
+.match-detail .panel {
+    border-radius: 10px;
+}
+
+.statistics-page .stats {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.statistics-page .stat {
+    min-height: 118px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.statistics-page .stat dd {
+    font-family: var(--font-number);
+    font-size: 2.25em;
+}
+
+.statistics-page .stats-table th,
+.statistics-page .stats-table td {
+    padding: 1em 0.8em;
+}
+
+.match-detail .action-menu {
+    display: flex;
+    align-items: center;
+    gap: 0.65em;
+    margin: 0 0 1.25em;
+    padding: 0;
+}
+
+.secondary-button,
+.danger-button {
+    min-height: 42px;
+    padding: 0.65em 1em;
+    background: var(--color-surface-raised);
+    border: 1px solid var(--color-border);
+    border-radius: 7px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.secondary-button:hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+}
+
+.danger-button {
+    color: var(--color-danger);
+    border-color: var(--color-danger);
+}
+
+.match-detail .panel h2 {
+    margin-bottom: 1em;
+    font-size: 1.1em;
+}
+
+.match-detail .versus {
+    min-height: 160px;
+}
+
+.match-detail .versus strong {
+    min-width: 132px;
+    padding: 0.18em 0.3em;
+    text-align: center;
+    background: var(--color-accent-soft);
+    border-radius: 8px;
+    font-family: var(--font-number);
+}
+
+.match-detail figure img {
+    width: 112px;
+}
+
+.match-detail .panel ul {
+    gap: 0.65em;
+}
+
+.match-detail .panel li {
+    min-width: 76px;
+    padding: 0.65em 0.8em;
+    text-align: center;
+    color: var(--color-text);
+    border: 1px solid var(--color-border);
+}
+
+.match-detail .panel p {
+    margin-bottom: 0;
+    line-height: 1.65;
+}
+
+@media (max-width: 900px) {
+    .app-shell .site-header {
+        flex-direction: column;
+        padding: 1em 1.25em;
+    }
+
+    .app-shell nav {
+        justify-content: flex-start;
+        width: 100%;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+    }
+
+    .app-shell nav a {
+        white-space: nowrap;
+    }
+
+    .statistics-page .stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 680px) {
+    .app-shell {
+        background:
+            linear-gradient(180deg, var(--color-card) 0, var(--color-card) 128px, var(--color-bg) 128px, var(--color-bg) 100%);
+    }
+
+    .content-main {
+        width: min(100% - 2em, 1120px);
+        padding-top: 2em;
+    }
+
+    .page-heading {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .page-heading h1 {
+        font-size: 2.35rem;
+    }
+
+    .form-grid,
+    .statistics-page .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .form-card {
+        padding: 1.25em;
+    }
+
+    .primary-button {
+        width: 100%;
+    }
+
+    .table-wrap {
+        margin-right: -1.25em;
+        padding-right: 1.25em;
+    }
+
+    .statistics-page .stats-table {
+        min-width: 520px;
+    }
+
+    .match-detail .action-menu {
+        width: 100%;
+    }
+
+    .match-detail .action-menu button {
+        flex: 1;
+    }
+
+    .match-detail .versus {
+        min-height: 0;
+        gap: 0.75em;
+    }
+
+    .match-detail figure img {
+        width: 72px;
+    }
+
+    .match-detail .versus strong {
+        min-width: 82px;
+        font-size: 1.8em;
+    }
+}
