@@ -26,4 +26,3 @@ Jedes Tischtennisspiel enthält folgende Informationen:
 - **Satzresultat:** Ergebnis der einzelnen Sätze, beispielsweise 11:8, 9:11, 11:6, 11:7.
 - **Spielort:** Wo das Spiel stattgefunden hat.
 - **Spielnotizen:** Persönliche Beobachtungen zum Spiel, beispielsweise was gut funktioniert hat oder woran ich noch arbeiten möchte.
-

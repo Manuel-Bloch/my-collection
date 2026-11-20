@@ -400,3 +400,324 @@ hr {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
+.dashboard {
+    background:
+        linear-gradient(180deg, var(--color-card) 0, var(--color-card) 88px, var(--color-bg) 88px, var(--color-bg) 100%);
+}
+
+.dashboard .site-header {
+    min-height: 88px;
+    padding: 1.25em clamp(1.25em, 5vw, 4em);
+    background: transparent;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.dashboard .brand {
+    color: var(--color-accent);
+    font-size: 1.35em;
+    letter-spacing: 0.12em;
+}
+
+.dashboard nav {
+    align-items: center;
+}
+
+.dashboard nav a {
+    padding: 0.55em 0.7em;
+    border-radius: 6px;
+    color: var(--color-text-muted);
+    font-size: 0.92em;
+}
+
+.dashboard nav a:hover,
+.dashboard nav a[aria-current="page"] {
+    color: var(--color-text);
+    background: var(--color-surface-raised);
+}
+
+.dashboard-main {
+    width: min(1200px, calc(100% - 2.5em));
+    margin: 0 auto;
+    padding: clamp(2em, 5vw, 4em) 0;
+}
+
+.dashboard-heading {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 2em;
+    margin-bottom: 2em;
+}
+
+.dashboard-heading h1 {
+    max-width: 720px;
+    margin: 0.15em 0 0;
+    font-size: clamp(2rem, 5vw, 4.25rem);
+    line-height: 1.02;
+    letter-spacing: -0.04em;
+}
+
+.eyebrow {
+    margin: 0;
+    color: var(--color-accent);
+    font-size: 0.76em;
+    font-weight: bold;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+.dashboard .addgame-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65em;
+    flex: 0 0 auto;
+    margin: 0;
+    min-height: 46px;
+    padding: 0.75em 1.1em;
+    font-size: 0.92em;
+    transition: background-color 160ms ease, transform 160ms ease;
+}
+
+.dashboard .addgame-button:hover {
+    transform: translateY(-2px);
+}
+
+.dashboard .addgame-button span {
+    font-size: 1.25em;
+    line-height: 1;
+}
+
+.overview {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    margin-bottom: 2.5em;
+}
+
+.overview-card {
+    min-height: 138px;
+    padding: 1.25em;
+    background: var(--color-card);
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+}
+
+.overview-card p,
+.overview-card span {
+    color: var(--color-text-muted);
+}
+
+.overview-card p {
+    margin: 0 0 0.7em;
+    font-size: 0.88em;
+}
+
+.overview-card strong {
+    display: block;
+    margin-bottom: 0.2em;
+    font-family: var(--font-number);
+    font-size: 2.5em;
+    line-height: 1;
+}
+
+.overview-card strong.positive {
+    color: var(--color-success);
+}
+
+.overview-card strong.negative {
+    color: var(--color-danger);
+}
+
+.overview-card span {
+    font-size: 0.78em;
+}
+
+.matches-section {
+    margin: 0;
+}
+
+.section-toolbar {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+.section-toolbar h2 {
+    margin: 0.25em 0 0;
+    font-size: 1.6em;
+}
+
+.filter-control {
+    display: flex;
+    align-items: center;
+    gap: 0.65em;
+}
+
+.filter-control label {
+    color: var(--color-text-muted);
+    font-size: 0.82em;
+}
+
+.dashboard #filter {
+    min-width: 150px;
+    padding: 0.65em 2em 0.65em 0.75em;
+}
+
+.dashboard .gridbox {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.dashboard .card {
+    min-height: 148px;
+    padding: 1.25em;
+    border-radius: 10px;
+    transition: transform 180ms ease, border-color 180ms ease, background-color 180ms ease;
+}
+
+.dashboard .card:hover {
+    transform: translateY(-3px);
+    background: var(--color-surface-raised);
+    border-color: var(--color-accent-soft);
+}
+
+.dashboard .card-info {
+    min-width: 0;
+}
+
+.dashboard .card h2 {
+    margin-bottom: 0.35em;
+    font-size: 1.05em;
+}
+
+.dashboard .card time,
+.dashboard .card p {
+    display: block;
+    margin: 0.25em 0;
+    font-size: 0.82em;
+}
+
+.dashboard .card p {
+    display: inline-block;
+    margin-top: 0.7em;
+    padding: 0.32em 0.55em;
+    color: var(--color-accent);
+    background: var(--color-accent-soft);
+    border-radius: 999px;
+}
+
+.dashboard .card-info a {
+    display: inline-block;
+    margin-top: 0.8em;
+    color: var(--color-text);
+    font-size: 0.82em;
+}
+
+.dashboard .card-info a::after {
+    content: " ->";
+}
+
+.dashboard .card-result strong {
+    font-family: var(--font-number);
+    font-size: 2.15em;
+}
+
+.dashboard .card-result span {
+    font-size: 0.75em;
+}
+
+.dashboard .card.is-entering {
+    animation: card-enter 300ms ease both;
+}
+
+@keyframes card-enter {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 900px) {
+    .dashboard .gridbox {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .dashboard .site-header {
+        flex-direction: column;
+        padding: 1em 1.25em;
+    }
+
+    .dashboard nav {
+        justify-content: flex-start;
+        width: 100%;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+    }
+
+    .dashboard nav a {
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 680px) {
+    .dashboard {
+        background:
+            linear-gradient(180deg, var(--color-card) 0, var(--color-card) 128px, var(--color-bg) 128px, var(--color-bg) 100%);
+    }
+
+    .dashboard-main {
+        width: min(100% - 2em, 1200px);
+        padding-top: 2em;
+    }
+
+    .dashboard-heading {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 1.25em;
+    }
+
+    .dashboard-heading h1 {
+        font-size: 2.35rem;
+    }
+
+    .overview {
+        grid-template-columns: 1fr;
+    }
+
+    .overview-card {
+        min-height: 110px;
+    }
+
+    .section-toolbar {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .filter-control,
+    .dashboard #filter {
+        width: 100%;
+    }
+
+    .dashboard .gridbox {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard .card {
+        min-height: 140px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .dashboard .card,
+    .dashboard .addgame-button,
+    .dashboard .card.is-entering {
+        animation: none;
+        transition: none;
+    }
+}

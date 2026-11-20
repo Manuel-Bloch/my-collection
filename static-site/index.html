@@ -7,37 +7,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table Tennis Tracker</title>
 </head>
-<body>
-    <header>
-        <p>TTT</p>
-    
+<body class="dashboard">
+    <header class="site-header">
+        <a class="brand" href="./index.html" aria-label="TTT Startseite">TTT</a>
 
-    <nav>
-        <a href="./index.html">Startseite</a>
-        
-        <a href="./items/add_entry.html">Spiel hinzufügen</a>
-        
-        <a href="./items/game_entry.html">Spiel anzeigen</a>
-
-        <a href="./items/statistics.html">Statistik</a>
-        
-        <a href="./items/kontaktformular.html">Kontaktformular</a>
-    </nav>
+        <nav aria-label="Hauptnavigation">
+            <a href="./index.html" aria-current="page">Startseite</a>
+            <a href="./items/add_entry.html">Spiel hinzufügen</a>
+            <a href="./items/game_entry.html">Spiel anzeigen</a>
+            <a href="./items/statistics.html">Statistik</a>
+            <a href="./items/kontaktformular.html">Kontaktformular</a>
+        </nav>
     </header>
 
-    <main>
-        <h1>Letzte Einträge</h1>
+    <main class="dashboard-main">
+        <section class="dashboard-heading" aria-labelledby="dashboard-title">
+            <div>
+                <p class="eyebrow">Mein Dashboard</p>
+                <h1 id="dashboard-title">Gute Spiele sind gute Fortschritte.</h1>
+            </div>
+            <a class="button addgame-button" href="./items/add_entry.html">
+                <span aria-hidden="true">+</span> Spiel hinzufügen
+            </a>
+        </section>
 
-        <label for="filter">Filter</label>
+        <section class="overview" aria-label="Spielübersicht">
+            <article class="overview-card">
+                <p>Gesamte Spiele</p>
+                <strong>6</strong>
+                <span>Letzte Saison</span>
+            </article>
+            <article class="overview-card">
+                <p>Siege</p>
+                <strong class="positive">4</strong>
+                <span>Davon 67 %</span>
+            </article>
+            <article class="overview-card">
+                <p>Niederlagen</p>
+                <strong class="negative">2</strong>
+                <span>Davon 33 %</span>
+            </article>
+        </section>
 
-        <select id="filter">
-            <option value="">Alle Kategorien</option>
-            <option value="Turnier">Turnier</option>
-            <option value="Training">Training</option>
-            <option value="Liga">Liga</option>
-        </select>
-
-        <a class ="button addgame-button"  href="./items/add_entry.html">+ Spiel hinzufügen</a>
+        <section class="matches-section" aria-labelledby="matches-title">
+            <div class="section-toolbar">
+                <div>
+                    <p class="eyebrow">Aktivität</p>
+                    <h2 id="matches-title">Letzte Einträge</h2>
+                </div>
+                <div class="filter-control">
+                    <label for="filter">Kategorie</label>
+                    <select id="filter">
+                        <option value="">Alle Kategorien</option>
+                        <option value="Turnier">Turnier</option>
+                        <option value="Training">Training</option>
+                        <option value="Liga">Liga</option>
+                    </select>
+                </div>
+            </div>
 
         <section class="gridbox" aria-label="Letzte Spiele">
             <article class="card" data-category="Turnier">
@@ -112,6 +139,7 @@
                     <span>Sieg</span>
                 </div>
             </article>
+        </section>
         </section>
     </main>
 </body>
