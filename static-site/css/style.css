@@ -407,10 +407,11 @@ hr {
 }
 
 .dashboard .site-header {
+    height: 88px;
     min-height: 88px;
     padding: 1.25em clamp(1.25em, 5vw, 4em);
     background: transparent;
-    border-bottom: 1px solid var(--color-border);
+    border-bottom: 0;
 }
 
 .dashboard .brand {
@@ -609,8 +610,9 @@ hr {
 }
 
 .dashboard .card-info a {
-    display: inline-block;
-    margin-top: 0.8em;
+    display: block;
+    width: fit-content;
+    margin-top: 0.45em;
     color: var(--color-text);
     font-size: 0.82em;
 }
@@ -648,27 +650,61 @@ hr {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .dashboard .site-header {
-        flex-direction: column;
+    .dashboard .site-header,
+    .app-shell .site-header {
+        height: 64px;
+        min-height: 64px;
+        flex-direction: row;
         padding: 1em 1.25em;
     }
 
-    .dashboard nav {
-        justify-content: flex-start;
+    .dashboard nav,
+    .app-shell nav {
+        position: fixed;
+        z-index: 20;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         width: 100%;
-        overflow-x: auto;
-        flex-wrap: nowrap;
+        height: 72px;
+        gap: 0.25em;
+        padding: 0.45em 0.5em max(0.45em, env(safe-area-inset-bottom));
+        overflow: visible;
+        background: var(--color-card);
+        border-top: 1px solid var(--color-border);
     }
 
-    .dashboard nav a {
-        white-space: nowrap;
+    .dashboard nav a,
+    .app-shell nav a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 0;
+        height: 54px;
+        padding: 0.45em 0.25em;
+        text-align: center;
+        line-height: 1.15;
+        white-space: normal;
+    }
+
+    .dashboard nav a[aria-current="page"],
+    .app-shell nav a[aria-current="page"] {
+        color: var(--color-accent);
+        background: var(--color-accent-soft);
+    }
+
+    .dashboard,
+    .app-shell {
+        padding-bottom: 78px;
     }
 }
 
 @media (max-width: 680px) {
     .dashboard {
         background:
-            linear-gradient(180deg, var(--color-card) 0, var(--color-card) 128px, var(--color-bg) 128px, var(--color-bg) 100%);
+            linear-gradient(180deg, var(--color-card) 0, var(--color-card) 64px, var(--color-bg) 64px, var(--color-bg) 100%);
     }
 
     .dashboard-main {
@@ -728,10 +764,11 @@ hr {
 }
 
 .app-shell .site-header {
+    height: 88px;
     min-height: 88px;
     padding: 1.25em clamp(1.25em, 5vw, 4em);
     background: transparent;
-    border-bottom: 1px solid var(--color-border);
+    border-bottom: 0;
 }
 
 .app-shell .brand {
@@ -997,7 +1034,7 @@ hr {
 @media (max-width: 680px) {
     .app-shell {
         background:
-            linear-gradient(180deg, var(--color-card) 0, var(--color-card) 128px, var(--color-bg) 128px, var(--color-bg) 100%);
+            linear-gradient(180deg, var(--color-card) 0, var(--color-card) 64px, var(--color-bg) 64px, var(--color-bg) 100%);
     }
 
     .content-main {
