@@ -639,7 +639,8 @@ textarea:focus-visible {
 }
 
 .statistics-page .panel,
-.match-detail .panel {
+.match-detail .panel,
+.messages-page .panel {
     margin-bottom: 1.25rem;
     padding: 1.35rem;
     background: var(--color-card);
@@ -648,7 +649,8 @@ textarea:focus-visible {
 }
 
 .statistics-page .panel h2,
-.match-detail .panel h2 {
+.match-detail .panel h2,
+.messages-page .panel h2 {
     margin-bottom: 1.15rem;
     font-size: 1.1rem;
 }
