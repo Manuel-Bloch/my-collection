@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" fill="none">
+  <defs>
+    <linearGradient id="wave-line" x1="120" y1="100" x2="1450" y2="920" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#34383F" stop-opacity=".22"/>
+      <stop offset=".5" stop-color="#41454C" stop-opacity=".78"/>
+      <stop offset="1" stop-color="#353F2B" stop-opacity=".3"/>
+    </linearGradient>
+    <linearGradient id="accent-wave" x1="200" y1="850" x2="1400" y2="150" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#353F2B" stop-opacity=".1"/>
+      <stop offset=".54" stop-color="#B9F36B" stop-opacity=".72"/>
+      <stop offset="1" stop-color="#CFFF91" stop-opacity=".16"/>
+    </linearGradient>
+    <linearGradient id="edge-fade" x1="0" y1="0" x2="1600" y2="1000" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#17191C" stop-opacity=".16"/>
+      <stop offset=".5" stop-color="#17191C" stop-opacity="0"/>
+      <stop offset="1" stop-color="#17191C" stop-opacity=".22"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="#17191C"/>
+  <g>
+    <path d="M-120 95c155 92 275 92 430 0s275-92 430 0 275 92 430 0 275-92 550 12" stroke="url(#wave-line)" stroke-width="2"/>
+    <path d="M-140 205c175 94 310 94 485 0s310-94 485 0 310 94 485 0 310-94 590 10" stroke="url(#wave-line)" stroke-width="2"/>
+    <path d="M-170 320c190 94 335 94 525 0s335-94 525 0 335 94 525 0 335-94 625 8" stroke="url(#wave-line)" stroke-width="2"/>
+    <path d="M-190 440c205 94 360 94 565 0s360-94 565 0 360 94 565 0 360-94 660 6" stroke="url(#wave-line)" stroke-width="2"/>
+    <path d="M-210 565c220 94 385 94 605 0s385-94 605 0 385 94 605 0 385-94 695 4" stroke="url(#wave-line)" stroke-width="2"/>
+    <path d="M-230 695c235 94 410 94 645 0s410-94 645 0 410 94 645 0 410-94 730 2" stroke="url(#wave-line)" stroke-width="2"/>
+    <path d="M-250 830c250 94 435 94 685 0s435-94 685 0 435 94 685 0 435-94 765 0" stroke="url(#wave-line)" stroke-width="2"/>
+    <path d="M-270 970c265 94 460 94 725 0s460-94 725 0 460 94 725 0" stroke="url(#wave-line)" stroke-width="2"/>
+  </g>
+  <g opacity=".76">
+    <path d="M80-120c94 165 94 295 0 460s-94 295 0 460 94 295 0 460" stroke="#41454C" stroke-width="1.5"/>
+    <path d="M270-150c94 180 94 320 0 500s-94 320 0 500 94 320 0 500" stroke="#34383F" stroke-width="2"/>
+    <path d="M470-180c94 195 94 345 0 540s-94 345 0 540 94 345 0 540" stroke="#41454C" stroke-width="1.5"/>
+    <path d="M680-210c94 210 94 370 0 580s-94 370 0 580 94 370 0 580" stroke="#34383F" stroke-width="2"/>
+    <path d="M900-240c94 225 94 395 0 620s-94 395 0 620 94 395 0 620" stroke="#41454C" stroke-width="1.5"/>
+    <path d="M1130-270c94 240 94 420 0 660s-94 420 0 660 94 420 0 660" stroke="#34383F" stroke-width="2"/>
+    <path d="M1370-300c94 255 94 445 0 700s-94 445 0 700 94 445 0 700" stroke="#41454C" stroke-width="1.5"/>
+  </g>
+  <g opacity=".72">
+    <path d="M-100 270c195 110 350 110 545 0s350-110 545 0 350 110 545 0 350-110 650 12" stroke="url(#accent-wave)" stroke-width="3"/>
+    <path d="M-160 625c210 108 375 108 585 0s375-108 585 0 375 108 585 0 375-108 680 10" stroke="url(#accent-wave)" stroke-width="2"/>
+    <path d="M-220 895c230 102 405 102 635 0s405-102 635 0 405 102 635 0 405-102 710 8" stroke="#353F2B" stroke-width="2"/>
+  </g>
+  <rect width="1600" height="1000" fill="url(#edge-fade)"/>
+</svg>

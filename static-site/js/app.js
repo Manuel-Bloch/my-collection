@@ -19,3 +19,8 @@ if (filter) {
     });
 }
 
+for (const [index, card] of cards.entries()) {
+    card.style.animationDelay = `${index * 45}ms`;
+    card.classList.add("is-entering");
+}
+
