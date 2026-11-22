@@ -45,6 +45,11 @@ Alle Seiten sind von jeder Seite aus über die Navigationsleiste erreichbar. Das
 - Wie funktioniert CSS :root? (Chat Gpt)
 - wann sollte ich den dl tag nutzen? (Chat Gpt)
 - Warum wird das Ergebnis auf den Eintragskarten nicht mehr angezeigt? (Copilot)
+- Warum funktioniert `git mv server.js server.ts` nicht? (Copilot)
+- Wie werden JavaScript-Dateien aus `public/` in TypeScript umgewandelt? (Copilot)
+- was ist input in JSX und rows. (Copilot)
+- Kann die JavaScript-Filterlogik von static-site unverändert in Next.js übernommen werden? (Copilot)
+- in contact page.tsx habe ich den import FormEvent zu Submit Event geändert da Formevent deprecated. Ist das sinnvoll. (Copilot)
 
 ## next-app
 
@@ -74,5 +79,10 @@ GET /api/messages
 Nachricht speichern:
 POST /api/messages
 Content-Type: application/json
+
+
+
+
+
 
 
