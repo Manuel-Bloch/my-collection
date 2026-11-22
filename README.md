@@ -45,3 +45,34 @@ Alle Seiten sind von jeder Seite aus über die Navigationsleiste erreichbar. Das
 - Wie funktioniert CSS :root? (Chat Gpt)
 - wann sollte ich den dl tag nutzen? (Chat Gpt)
 - Warum wird das Ergebnis auf den Eintragskarten nicht mehr angezeigt? (Copilot)
+
+## next-app
+
+next-app starten: 
+
+cd .\next-app
+npm install
+npm run dev
+
+## Verfügbare API-Routen
+
+Alle Spiele:
+GET /api/items
+
+Eine Kategorie:
+GET /api/items?category=Training
+GET /api/items?category=Turnier
+GET /api/items?category=Liga
+
+Einzelnes Spiel:
+GET /api/items/max-mustermann
+GET /api/items/lena-schmidt
+
+Kontakt-Nachrichten:
+GET /api/messages
+
+Nachricht speichern:
+POST /api/messages
+Content-Type: application/json
+
+
